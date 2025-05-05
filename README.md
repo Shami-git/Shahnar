@@ -1,6 +1,3 @@
-from pathlib import Path
-import zipfile
-
 # D&D Discord Bot Documentation
 
 A custom Discord bot designed to manage in-game resources and quest tracking for a Dungeons & Dragons campaign server.
