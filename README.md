@@ -1,6 +1,6 @@
 # D&D Discord Bot Documentation
 
-A custom Discord bot designed to manage in-game resources and quest tracking for a Dungeons & Dragons campaign server.
+A custom Discord bot designed to manage in-game resources and quest tracking for The Silver Stitches.
 
 ---
 
@@ -44,7 +44,7 @@ A custom Discord bot designed to manage in-game resources and quest tracking for
 
 ---
 
-## ⚙️ Work In Progress (WIP)
+## ⚙️ Work In Progress (WIP) / Future Improvements
 
 1. **`/icyquest_clear_active`**  
    Clears all active quests. *Confirmation prompt planned.*
@@ -60,27 +60,3 @@ A custom Discord bot designed to manage in-game resources and quest tracking for
 
 ---
 
-## 💡 Future Improvements
-
-- Implement role-based permissions for commands (e.g., only DMs can use clear commands)
-- Auto-backup of quest and bank data
-- More robust error handling and user feedback
-- Web dashboard or UI for easier management (stretch goal)
-
----
-
-## 📁 Project Structure (example)
-
-```plaintext
-/discord-dnd-bot
-├── bot.py
-├── cogs/
-│   ├── bank.py
-│   └── quests.py
-├── data/
-│   ├── bank.json
-│   └── quests.json
-├── utils/
-│   └── helpers.py
-├── requirements.txt
-└── README.md
