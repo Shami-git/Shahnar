@@ -13,8 +13,8 @@ A D&D-themed Discord bot to manage your tavern's economy, quests, and achievemen
 
 Manage your in-tavern bank with ease:
 
-- `/bank add Xgold Ysilver Zcopper note` – Add money to the bank.
-- `/bank remove Xgold Ysilver Zcopper note` – Remove money from the bank.
+- `/bank add Xgold Ysilver Zcopper note` – Add money to the bank with an optional note section.
+- `/bank remove Xgold Ysilver Zcopper note` – Remove money from the bank with an optional note section.
 - `/bank clear` – Clears the entire bank.
 - `/balance` – Displays current balance.
 - `/expenses` – Deducts a random amount (within set range) for tavern expenses.
@@ -44,7 +44,7 @@ Celebrate key moments with a timestamped achievement tracker:
 ## 🧩 Miscellaneous
 
 - All outputs use embedded cards and emojis for better readability.
-- Unified `/quest` command replaced older variants like `/icyquest`.
+- renamed `/icyquest` and other sub-commands to `/quest` for simplicity.
 - Merged `/questlist` and `/questlist_completed` into `/quest list`.
 
 ---
