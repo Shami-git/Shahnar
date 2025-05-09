@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-WIP-yellow)
 
-A D&D-themed Discord bot to manage your tavern's economy, quests, and achievements — all with a touch of style using embedded messages and emojis.
+A D&D-themed Discord bot to manage The Silver Stitches' tavern economy, quests, and achievements — all with a touch of style using embedded messages and emojis.
 
 ---
 
