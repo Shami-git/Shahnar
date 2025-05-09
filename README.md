@@ -1,62 +1,58 @@
-# D&D Discord Bot Documentation
+# 🏰 Discord Tavern Bot
 
-A custom Discord bot designed to manage in-game resources and quest tracking for The Silver Stitches.
+![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)
+![Discord.py](https://img.shields.io/badge/discord.py-2.x-blueviolet?logo=discord)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-WIP-yellow)
 
----
-
-## 📦 Features
-
-### 💰 Money-Related Commands
-
-1. **`/bank add Xgold Ysilver Zcopper`**  
-   Adds the specified amount to the tavern's bank reserve. Automatically calculates and displays the new total.
-
-2. **`/bank remove Xgold Ysilver Zcopper`**  
-   Removes the specified amount from the bank reserve. Automatically calculates and displays the new total.
-
-3. **`/balance`**  
-   Displays the current balance of gold, silver, and copper in the bank.
-
-4. **`/bank_clear`**  
-   Clears all money from the bank reserve. *Confirmation prompt planned.*
-
-5. **`/expenses`**  
-   Randomly deducts a variable amount of gold, silver, and copper to simulate tavern expenses. The range can be configured.
+A D&D-themed Discord bot to manage your tavern's economy, quests, and achievements — all with a touch of style using embedded messages and emojis.
 
 ---
 
-### 📜 Quest-Related Commands
+## 💰 Money System
 
-1. **`/icyquest add (questname) (description)`**  
-   Adds a new quest to the quest log with the given name and description.
+Manage your in-tavern bank with ease:
 
-2. **`/icyquest complete (questname)`**  
-   Marks the specified quest as completed.
-
-3. **`/icyquestlist`**  
-   Displays a list of all active quests.
-
-4. **`/icyquestlist_completed`**  
-   Displays a list of completed quests.
-
-5. **`/icyquest_edit (questname) (new quest name) (new description)`** *(optional)*  
-   Edits the name and/or description of a specific quest.
+- `/bank add Xgold Ysilver Zcopper note` – Add money to the bank.
+- `/bank remove Xgold Ysilver Zcopper note` – Remove money from the bank.
+- `/bank clear` – Clears the entire bank.
+- `/balance` – Displays current balance.
+- `/expenses` – Deducts a random amount (within set range) for tavern expenses.
 
 ---
 
-## ⚙️ Work In Progress (WIP) / Future Improvements
+## 🧭 Quest System
 
-1. **`/icyquest_clear_active`**  
-   Clears all active quests. *Confirmation prompt planned.*
+Track and manage your party’s ongoing and completed quests:
 
-2. **`/icyquest_clear_completed`**  
-   Clears all completed quests. *Confirmation prompt planned.*
-
-3. **Hosting the Bot**  
-   Initial research completed on hosting options (e.g., Replit, Railway, self-hosting). Implementation pending.
-
-4. **Confirmation Prompts**  
-   Will be added to sensitive commands like `bank_clear`, `icyquest_clear_active`, and `icyquest_clear_completed` to prevent accidental deletions.
+- `/quest add (quest name) (description)` – Adds a quest with details.
+- `/quest complete (quest name)` – Marks a quest as complete.
+- `/quest list` – Shows all active and completed quests.
 
 ---
 
+## 🏆 Achievement System
+
+Celebrate key moments with a timestamped achievement tracker:
+
+- `/achievement add (name) (description)` – Adds a new achievement.
+- `/achievement remove (name)` – Removes an achievement (for typos or retcons).
+- `/achievement list` – Lists all current achievements.
+
+---
+
+## 🧩 Miscellaneous
+
+- All outputs use embedded cards and emojis for better readability.
+- Unified `/quest` command replaced older variants like `/icyquest`.
+- Merged `/questlist` and `/questlist_completed` into `/quest list`.
+
+---
+
+## 🛠️ Work in Progress (WIP)
+
+- `/quest clear active` – Clear all active quests.
+- `/quest clear completed` – Clear all completed quests.
+- `/quest edit (old name) (new name) (new description (optional))` – Edit existing quests.
+- Hosting online – Researched, not yet implemented.
+- Confirmation buttons for all clear commands (quests and bank).
